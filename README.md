@@ -8,7 +8,7 @@
 #title = "Zähldichte der Binomial(10,0.5)-Verteilung")
 
 ggplot(data.frame(x=1:100), aes(x)) + 
-geom_point(aes(y=dgeom(x-1, prob = 0.05)),
+geom_smooth(aes(y=dgeom(x-1, prob = 0.05)),
 colour="#0065BD") + 
 theme_light() + 
 labs(x = "k", y = expression(rho["0.05"](k)),
